@@ -1,0 +1,1306 @@
+[
+  {
+    "scene": {
+      "name": "bar front view",
+      "items": [
+        {
+          "name": "backdoor",
+          "description": "go inside",
+          "imagePath": "",
+          "x": 1000,
+          "y": 200,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "right",
+          "sceneName": "hallway"
+        },
+        {
+          "name": "right facing",
+          "description": "turn right",
+          "imagePath": "",
+          "x": 1170,
+          "y": 400,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "right",
+          "sceneName": "door right facing"
+        },
+        {
+          "name": "left facing",
+          "description": "turn left",
+          "imagePath": "",
+          "x": 10,
+          "y": 400,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "door left facing"
+        },
+        {
+          "name": "back facing",
+          "description": "turn back",
+          "imagePath": "",
+          "x": 600,
+          "y": 620,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "down",
+          "sceneName": "front door view"
+        },
+        {
+          "name": "bar",
+          "description": "Enter bar",
+          "imagePath": "",
+          "x": 600,
+          "y": 275,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "down",
+          "sceneName": "behind bar closed compartment"
+        },
+        {
+          "name": "flower pot",
+          "description": "Weed plant",
+          "imagePath": "./res/img/playable/plant-bar-front-view.png",
+          "x": 1000,
+          "y": 450,
+          "w": 180,
+          "h": 195,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "flower closeup"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "door left facing",
+      "items": [
+        {
+          "name": "right facing",
+          "description": "turn right",
+          "imagePath": "",
+          "x": 1170,
+          "y": 400,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "right",
+          "sceneName": "bar front view"
+        },
+        {
+          "name": "left facing",
+          "description": "turn left",
+          "imagePath": "",
+          "x": 10,
+          "y": 400,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "front door view"
+        },
+        {
+          "name": "down facing",
+          "description": "turn around",
+          "imagePath": "",
+          "x": 600,
+          "y": 620,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "down",
+          "sceneName": "door right facing"
+        },
+        {
+          "name": "wall pic",
+          "description": "Creepa, ohhhhh maaaaaan",
+          "imagePath": "./res/img/playable/wallpic.png",
+          "x": 413,
+          "y": 90,
+          "w": 265,
+          "h": 135,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "wallpic closeup"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "behind bar closed compartment",
+      "items": [
+        {
+          "name": "go back",
+          "description": "Go back",
+          "imagePath": "",
+          "x": 1170,
+          "y": 600,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "right",
+          "sceneName": "bar front view"
+        },
+        {
+          "name": "43 Blend",
+          "description": "holy water",
+          "imagePath": "./res/img/drink/42blend.png",
+          "x": 416,
+          "y": 380,
+          "w": 60,
+          "h": 140,
+          "type": "drinkbb-button",
+          "data": "blend",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Beefeeter",
+          "description": "pink water",
+          "imagePath": "./res/img/drink/beefeater.png",
+          "x": 516,
+          "y": 380,
+          "w": 60,
+          "h": 140,
+          "type": "drinkbb-button",
+          "data": "beefeater",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Jaeger",
+          "description": "Bylinky",
+          "imagePath": "./res/img/drink/jaeger.png",
+          "x": 616,
+          "y": 420,
+          "w": 80,
+          "h": 100,
+          "type": "drinkbb-button",
+          "data": "jaeger",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Morgn",
+          "description": "kapitan jack morgan",
+          "imagePath": "./res/img/drink/morgan.png",
+          "x": 716,
+          "y": 420,
+          "w": 40,
+          "h": 140,
+          "type": "drinkbb-button",
+          "data": "jaeger",
+          "direction": "",
+          "sceneName": ""
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "behind bar open compartment",
+      "items": [
+        {
+          "name": "go back",
+          "description": "Go back",
+          "imagePath": "",
+          "x": 1170,
+          "y": 600,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "right",
+          "sceneName": "bar front view"
+        },
+        {
+          "name": "43 Blend",
+          "description": "holy water",
+          "imagePath": "./res/img/drink/42blend.png",
+          "x": 716,
+          "y": 380,
+          "w": 60,
+          "h": 140,
+          "type": "drinkbb-button",
+          "data": "blend",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Beefeeter",
+          "description": "pink water",
+          "imagePath": "./res/img/drink/beefeater.png",
+          "x": 616,
+          "y": 380,
+          "w": 60,
+          "h": 140,
+          "type": "drinkbb-button",
+          "data": "beefeater",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Jaeger",
+          "description": "Bylinky",
+          "imagePath": "./res/img/drink/jaeger.png",
+          "x": 416,
+          "y": 420,
+          "w": 80,
+          "h": 100,
+          "type": "drinkbb-button",
+          "data": "jaeger",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Morgn",
+          "description": "kapitan jack morgan",
+          "imagePath": "./res/img/drink/morgan.png",
+          "x": 516,
+          "y": 420,
+          "w": 40,
+          "h": 140,
+          "type": "drinkbb-button",
+          "data": "jaeger",
+          "direction": "",
+          "sceneName": ""
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "front door view",
+      "items": [
+        {
+          "name": "right facing",
+          "description": "turn right",
+          "imagePath": "",
+          "x": 1170,
+          "y": 400,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "right",
+          "sceneName": "door left facing"
+        },
+        {
+          "name": "left facing",
+          "description": "turn left",
+          "imagePath": "",
+          "x": 10,
+          "y": 400,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "door right facing"
+        },
+        {
+          "name": "down facing",
+          "description": "turn around",
+          "imagePath": "",
+          "x": 600,
+          "y": 620,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "down",
+          "sceneName": "bar front view"
+        },
+        {
+          "name": "code lock",
+          "description": "Inspect codelock",
+          "imagePath": "./res/img/codelock/display.png",
+          "x": 310,
+          "y": 290,
+          "w": 55,
+          "h": 80,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "codelock closeup"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "door right facing",
+      "items": [
+        {
+          "name": "right facing",
+          "description": "turn right",
+          "imagePath": "",
+          "x": 1170,
+          "y": 400,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "right",
+          "sceneName": "front door view"
+        },
+        {
+          "name": "left facing",
+          "description": "turn left",
+          "imagePath": "",
+          "x": 10,
+          "y": 400,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "bar front view"
+        },
+        {
+          "name": "down facing",
+          "description": "turn around",
+          "imagePath": "",
+          "x": 600,
+          "y": 620,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "down",
+          "sceneName": "door left facing"
+        },
+        {
+          "name": "Safe",
+          "description": "Inspect safe",
+          "imagePath": "./res/img/safe/safe.png",
+          "x": 690,
+          "y": 120,
+          "w": 188,
+          "h": 188,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "safe closeup"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "safe closeup",
+      "items": [
+        {
+          "name": "Back",
+          "description": "Go back",
+          "imagePath": "",
+          "x": 600,
+          "y": 620,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "down",
+          "sceneName": "door right facing"
+        },
+        {
+          "name": "Orange button",
+          "description": "Touch me sempai >-<",
+          "imagePath": "./res/img/safe/safe-orange.png",
+          "x": 414,
+          "y": 380,
+          "w": 190,
+          "h": 80,
+          "type": "safe-button",
+          "data": "orange",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Green button",
+          "description": "uWu",
+          "imagePath": "./res/img/safe/safe-green.png",
+          "x": 656,
+          "y": 380,
+          "w": 190,
+          "h": 80,
+          "type": "safe-button",
+          "data": "green",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Pink button",
+          "description": "Pinky owo",
+          "imagePath": "./res/img/safe/safe-pink.png",
+          "x": 414,
+          "y": 485,
+          "w": 192,
+          "h": 80,
+          "type": "safe-button",
+          "data": "pink",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Blue button",
+          "description": "blue da be do be da",
+          "imagePath": "./res/img/safe/safe-blue.png",
+          "x": 656,
+          "y": 485,
+          "w": 190,
+          "h": 80,
+          "type": "safe-button",
+          "data": "blue",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Orange button",
+          "description": "BIIIIG Touch me sempai >-<",
+          "imagePath": "./res/img/safe/safe-orange.png",
+          "x": 413,
+          "y": 142,
+          "w": 435,
+          "h": 212,
+          "type": "safe-button-display",
+          "data": "safe-button-display-orange",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Green button",
+          "description": " ZAAAAAA uWu",
+          "imagePath": "./res/img/safe/safe-green.png",
+          "x": 413,
+          "y": 142,
+          "w": 435,
+          "h": 212,
+          "type": "safe-button-display",
+          "data": "safe-button-display-green",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Pink button",
+          "description": " BIG BITCH Pinky owo",
+          "imagePath": "./res/img/safe/safe-pink.png",
+          "x": 413,
+          "y": 142,
+          "w": 435,
+          "h": 212,
+          "type": "safe-button-display",
+          "data": "safe-button-display-pink",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Blue button",
+          "description": "BIIGIIGIIGG blue da be do be da",
+          "imagePath": "./res/img/safe/safe-blue.png",
+          "x": 413,
+          "y": 142,
+          "w": 435,
+          "h": 212,
+          "type": "safe-button-display",
+          "data": "safe-button-display-blue",
+          "direction": "",
+          "sceneName": ""
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "safe closeup open",
+      "items": [
+        {
+          "name": "Back",
+          "description": "Go back",
+          "imagePath": "",
+          "x": 600,
+          "y": 620,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "down",
+          "sceneName": "door right facing"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "wallpic closeup",
+      "items": [
+        {
+          "name": "Back",
+          "description": "Go back or go black",
+          "imagePath": "",
+          "x": 600,
+          "y": 620,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "down",
+          "sceneName": "door left facing"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "flower closeup",
+      "items": [
+        {
+          "name": "Back",
+          "description": "Go back or go black",
+          "imagePath": "",
+          "x": 600,
+          "y": 620,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "down",
+          "sceneName": "bar front view"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "codelock closeup",
+      "items": [
+        {
+          "name": "Back",
+          "description": "Go back",
+          "imagePath": "",
+          "x": 600,
+          "y": 620,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "down",
+          "sceneName": "front door view"
+        },
+        {
+          "name": "Num 0",
+          "description": "Numero Zero",
+          "imagePath": "./res/img/codelock/0.png",
+          "x": 314,
+          "y": 498,
+          "w": 113,
+          "h": 53,
+          "type": "codelock-button",
+          "data": "0",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Num 8",
+          "description": "Numero Eighto",
+          "imagePath": "./res/img/codelock/8.png",
+          "x": 314,
+          "y": 456,
+          "w": 113,
+          "h": 53,
+          "type": "codelock-button",
+          "data": "8",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Num 5",
+          "description": "Numero Fivto",
+          "imagePath": "./res/img/codelock/5.png",
+          "x": 314,
+          "y": 414,
+          "w": 113,
+          "h": 53,
+          "type": "codelock-button",
+          "data": "5",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Num 2",
+          "description": "Numero Towo",
+          "imagePath": "./res/img/codelock/2.png",
+          "x": 314,
+          "y": 372,
+          "w": 113,
+          "h": 53,
+          "type": "codelock-button",
+          "data": "2",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Num 1",
+          "description": "Numero Uno",
+          "imagePath": "./res/img/codelock/1.png",
+          "x": 211,
+          "y": 372,
+          "w": 113,
+          "h": 53,
+          "type": "codelock-button",
+          "data": "1",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Num 4",
+          "description": "Numero Fourto",
+          "imagePath": "./res/img/codelock/4.png",
+          "x": 211,
+          "y": 414,
+          "w": 113,
+          "h": 53,
+          "type": "codelock-button",
+          "data": "4",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Num 7",
+          "description": "Numero Severus",
+          "imagePath": "./res/img/codelock/7.png",
+          "x": 211,
+          "y": 456,
+          "w": 113,
+          "h": 53,
+          "type": "codelock-button",
+          "data": "7",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Star",
+          "description": "Starwars",
+          "imagePath": "./res/img/codelock/star.png",
+          "x": 211,
+          "y": 498,
+          "w": 113,
+          "h": 53,
+          "type": "codelock-button",
+          "data": "*",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Hashtagos",
+          "description": "Hashus",
+          "imagePath": "./res/img/codelock/hash.png",
+          "x": 417,
+          "y": 498,
+          "w": 113,
+          "h": 53,
+          "type": "codelock-button",
+          "data": "#",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Num 3",
+          "description": "Numero Trees",
+          "imagePath": "./res/img/codelock/3.png",
+          "x": 417,
+          "y": 372,
+          "w": 113,
+          "h": 53,
+          "type": "codelock-button",
+          "data": "3",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Num 6",
+          "description": "Numero Sexto",
+          "imagePath": "./res/img/codelock/6.png",
+          "x": 417,
+          "y": 414,
+          "w": 113,
+          "h": 53,
+          "type": "codelock-button",
+          "data": "6",
+          "direction": "",
+          "sceneName": ""
+        },
+        {
+          "name": "Num 9",
+          "description": "Numero Nein",
+          "imagePath": "./res/img/codelock/9.png",
+          "x": 417,
+          "y": 456,
+          "w": 113,
+          "h": 53,
+          "type": "codelock-button",
+          "data": "9",
+          "direction": "",
+          "sceneName": ""
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "opening scene",
+      "items": [
+        {
+          "name": "Start game",
+          "description": "Start game",
+          "imagePath": "./res/img/ui/play-button.png",
+          "x": 745,
+          "y": 500,
+          "w": 425,
+          "h": 110,
+          "type": "play-button",
+          "direction": "",
+          "sceneName": "bar front view"
+        },
+        {
+          "name": "Kredenšls",
+          "description": "who made this bitch",
+          "imagePath": "./res/img/moon-icon.png",
+          "x": 625,
+          "y": 260,
+          "w": 175,
+          "h": 175,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "credentials"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "credentials",
+      "items": [
+        {
+          "name": "Kredenšls",
+          "description": "who made this bitch",
+          "imagePath": "./res/img/moon-icon.png",
+          "x": 715,
+          "y": 30,
+          "w": 265,
+          "h": 265,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "opening scene"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "hallway",
+      "items": [
+        {
+          "name": "chodbicka do storage",
+          "description": "Storage room",
+          "imagePath": "./res/img/playable/storage_door.png",
+          "x": 30,
+          "y": 160,
+          "w": 380,
+          "h": 545,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "storage"
+        },
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "bar front view"
+        },
+        {
+          "name": "chodbicka do salonu",
+          "description": "prepnuti do salonu",
+          "imagePath": "./res/img/playable/salon_door.png",
+          "x": 500,
+          "y": 145,
+          "w": 380,
+          "h": 560,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "salon"
+        },
+        {
+          "name": "chodbicka do toalet",
+          "description": "prepnuti do toalet",
+          "imagePath": "./res/img/playable/toilet_door.png",
+          "x": 905,
+          "y": 160,
+          "w": 380,
+          "h": 550,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "toilets"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "storage",
+      "items": [
+        {
+          "name": "brandy",
+          "description": "Brandy tucked on a shelf",
+          "imagePath": "./res/img/playable/brandy.png",
+          "x": 420,
+          "y": 200,
+          "w": 120,
+          "h": 130,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "brandy closeup"
+        },
+        {
+          "name": "box",
+          "description": "Box tucked on a shelf",
+          "imagePath": "./res/img/box/box_in_storage.png",
+          "x": 510,
+          "y": 470,
+          "w": 100,
+          "h": 70,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "box closeup"
+        },
+        {
+          "name": "painting",
+          "description": "Painting with strange symbols",
+          "imagePath": "./res/img/playable/painting_in_ storage.png",
+          "x": 540,
+          "y": 30,
+          "w": 180,
+          "h": 120,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "storage painting closeup"
+        },
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "hallway"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "brandy closeup",
+      "items": [
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "storage"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "box closeup",
+      "items": [
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "storage"
+        },
+        {
+          "name": "whirl",
+          "description": "Whirl symbol",
+          "imagePath": "./res/img/box/Whirl.png",
+          "x": 390,
+          "y": 340,
+          "w": 100,
+          "h": 170,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "whirl"
+        },
+        {
+          "name": "whirl",
+          "description": "Whirl symbol",
+          "imagePath": "./res/img/box/Whirl.png",
+          "x": 522,
+          "y": 340,
+          "w": 100,
+          "h": 170,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "whirl"
+        },
+        {
+          "name": "whirl",
+          "description": "Whirl symbol",
+          "imagePath": "./res/img/box/Whirl.png",
+          "x": 665,
+          "y": 340,
+          "w": 100,
+          "h": 170,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "whirl"
+        },
+        {
+          "name": "whirl",
+          "description": "Whirl symbol",
+          "imagePath": "./res/img/box/Whirl.png",
+          "x": 802,
+          "y": 340,
+          "w": 100,
+          "h": 170,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "whirl"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "storage painting closeup",
+      "items": [
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "storage"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "salon",
+      "items": [
+        {
+          "name": "martini",
+          "description": "Martini sitting on a table",
+          "imagePath": "./res/img/playable/martini.png",
+          "x": 605,
+          "y": 374,
+          "w": 70,
+          "h": 70,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "martini closeup"
+        },
+        {
+          "name": "lamp",
+          "description": "Lamp",
+          "imagePath": "./res/img/playable/lamp_salon.png",
+          "x": 805,
+          "y": 174,
+          "w": 220,
+          "h": 400,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "lamp off closeup"
+        },
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "hallway"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "martini closeup",
+      "items": [
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "salon"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "lamp off closeup",
+      "items": [
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "salon"
+        },
+        {
+          "name": "lampshade",
+          "description": "turn on",
+          "imagePath": "./res/img/playable/lamp_shade.png",
+          "x": 370,
+          "y": 200,
+          "w": 700,
+          "h": 450,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "lamp on closeup"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "lamp on closeup",
+      "items": [
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "salon"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "toilets",
+      "items": [
+        {
+          "name": "coin",
+          "description": "Coin with the number 2 on it",
+          "imagePath": "./res/img/playable/coin_on_ground.png",
+          "x": 562,
+          "y": 550,
+          "w": 100,
+          "h": 70,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "coin side two"
+        },
+        {
+          "name": "vent",
+          "description": "Vent in the wall",
+          "imagePath": "./res/img/playable/vent_in_toilet.png",
+          "x": 502,
+          "y": 400,
+          "w": 100,
+          "h": 70,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "vent closed"
+        },
+        {
+          "name": "toilet stall door",
+          "description": "Toilet door",
+          "imagePath": "./res/img/playable/toilet_stall_door.png",
+          "x": 85,
+          "y": 160,
+          "w": 215,
+          "h": 540,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "toilet closed"
+        },
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "hallway"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "coin side two",
+      "items": [
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "toilets"
+        },
+        {
+          "name": "coin side two",
+          "description": "go back",
+          "imagePath": "./res/img/scene/coin_side_two.png",
+          "x": 0,
+          "y": 0,
+          "w": 1200,
+          "h": 690,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "coin side C"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "coin side C",
+      "items": [
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "toilets"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "toilet closed",
+      "items": [
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "toilets"
+        },
+        {
+          "name": "toilet top",
+          "description": "go back",
+          "imagePath": "./res/img/playable/toilet_top.png",
+          "x": 265,
+          "y": 110,
+          "w": 760,
+          "h": 270,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "toilet open"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "toilet open",
+      "items": [
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "toilets"
+        },
+        {
+          "name": "screwdriver",
+          "description": "go back",
+          "imagePath": "./res/img/playable/screwdriver.png",
+          "x": 265,
+          "y": 110,
+          "w": 760,
+          "h": 270,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "toilet open"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "vent closed",
+      "items": [
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "toilets"
+        }
+      ]
+    }
+  }
+]

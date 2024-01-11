@@ -1,0 +1,140 @@
+{
+    "scenes": [
+        {
+            "name": "opening scene",
+            "path": "./res/img/scene/opening-screen.png"
+        },
+        {
+            "name": "ending scene",
+            "path": "./res/img/scene/ending-screen.png"
+        },
+        {
+            "name": "bar front view",
+            "path": "./res/img/scene/bar-front-view.png"
+        },
+        {
+            "name": "flower closeup",
+            "path": "./res/img/scene/plant-closeup.png"
+        },
+        {
+            "name": "door left facing",
+            "path": "./res/img/scene/door-left-facing.png"
+        },
+        {
+            "name": "door right facing",
+            "path": "./res/img/scene/door-right-facing.png"
+        },
+        {
+            "name": "safe closeup",
+            "path": "./res/img/scene/safe-closeup.png"
+        },
+        {
+            "name": "safe closeup open",
+            "path": "./res/img/scene/safe-closeup-open.png"
+        },
+        {
+            "name": "codelock closeup",
+            "path": "./res/img/scene/main-door-code-input-closeup.png"
+        },
+        {
+            "name": "credentials",
+            "path": "./res/img/scene/credentials.png"
+        },
+        {
+            "name": "wallpic closeup",
+            "path": "./res/img/scene/painting-closed.png"  
+        }, 
+        {
+            "name": "wallpic open closeup",
+            "path": "./res/img/scene/painting-open.png"  
+        },
+        {
+            "name": "main door code input closeup",
+            "path": "./res/img/scene/main-door-code-input-closeup.png"
+        },
+        {
+            "name": "behind bar open compartment",
+            "path": "./res/img/scene/behind-bar-open-compartment.png"
+        },
+        {
+            "name": "behind bar closed compartment",
+            "path": "./res/img/scene/behind-bar-closed-compartment.png"
+        },
+        {
+            "name": "front door view",
+            "path": "./res/img/scene/front-door-view.png"
+        },
+        {
+            "name": "hallway",
+            "path": "./res/img/scene/hallway.png"
+        },
+        {
+            "name": "toilets",
+            "path": "./res/img/scene/toilet.png"
+        },
+        {
+            "name": "storage",
+            "path": "./res/img/scene/storage.png"
+        },
+        {
+            "name": "salon",
+            "path": "./res/img/scene/salon.png"
+        },
+        {
+            "name": "martini closeup",
+            "path": "./res/img/scene/martini_closeup.png"
+        },
+        {
+            "name": "brandy closeup",
+            "path": "./res/img/scene/brandy_closeup.png"
+        },
+        {
+            "name": "coin side two",
+            "path": "./res/img/scene/coin_side_two.png"
+        },
+        {
+            "name": "coin side C",
+            "path": "./res/img/scene/coin_side_C.png"
+        },
+        {
+            "name": "box closeup",
+            "path": "./res/img/scene/box_closeup_storage.png" 
+        },
+        {
+            "name": "box open closeup",
+            "path": "./res/img/scene/box_closeup_open.png" 
+        },
+        {
+            "name": "storage painting closeup",
+            "path": "./res/img/scene/painting_in_storage_closeup.png" 
+        },
+        {
+            "name": "lamp off closeup",
+            "path": "./res/img/scene/lamp_off_closeup.png" 
+        },
+        {
+            "name": "lamp on closeup",
+            "path": "./res/img/scene/lamp_on_closeup.png" 
+        },
+        {
+            "name": "final door",
+            "path": "./res/img/scene/final_door.png" 
+        },
+        {
+            "name": "toilet closed",
+            "path": "./res/img/scene/toilet_closed.png" 
+        },
+        {
+            "name": "toilet open",
+            "path": "./res/img/scene/toilet_open.png" 
+        },
+        {
+            "name": "vent closed",
+            "path": "./res/img/scene/vent_closed_closeup.png" 
+        },
+        {
+            "name": "vent open",
+            "path": "./res/img/scene/vent_open_closeup.png" 
+        }
+    ]
+}

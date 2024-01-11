@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+* {
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.game-wrapper {
+    width: 1280px;
+    height: 720px;
+}
+
+.game {
+    width: 1280px;
+    height: 720px;
+    background-color: pink;
+    position: relative;
+    background-size: contain;
+}
+
+.play-button {
+    transition: .2s box-shadow ease;
+}
+
+.play-button:hover {
+    box-shadow: 0 4px 8px 0 rgba(155, 129, 218, 0.3), 0 6px 20px 0 rgba(155, 129, 218, 0.29);
+}
+
+.inventory {
+    width: 1280px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+}
+
+.safe-button-pink:hover {
+    box-shadow: 0 4px 8px 0 rgba(255, 103, 121, 0.1), 0 6px 20px 0 rgba(255, 103, 121, 0.69);
+}
+
+.safe-button-blue:hover {
+    box-shadow: 0 4px 8px 0 rgba(1, 177, 216, 0.1), 0 6px 20px 0 rgba(1, 177, 216, 0.69);
+}
+
+.safe-button-green:hover {
+    box-shadow: 0 4px 8px 0 rgba(56, 131, 22, 0.1), 0 6px 20px 0 rgba(56, 131, 22, 0.69);
+}
+
+.safe-button-orange:hover {
+    box-shadow: 0 4px 8px 0 rgba(228, 5, 5, 0.1), 0 6px 20px 0 rgba(228, 112, 5, 0.69);
+}
+
+.codelock-button:hover {
+    opacity: 0.8;
+}
+
+.codelock-button {
+    opacity: 0.1;
+    transition: .1s ease;
+    filter: saturate(8);
+}
+
+.safe-button {
+    transition: .1s ease;
+}
+
+.safe-button-display {
+    transition: .1s ease; 
+}
+
+#codelock-input-text {
+    font-family: 'Fira Code', monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 69px;
+    position: absolute;
+    left: 242px;
+    top: 145px;
+    letter-spacing: 26px;
+    display: none;
+}
