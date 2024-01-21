@@ -136,7 +136,7 @@ class Item {
             SceneManager.scenes.map((scene) => {
               if (scene.name === "vent open") {
                 scene.load(game);
-                Item.keyElement.style.display = "none";
+                Item.keyElement.style.display = "none";     //schovani klice
                 return;
               }
             })
@@ -170,7 +170,7 @@ class Item {
         case "safe closeup":
           if (Safe.opened) {
             SceneManager.scenes.map((scene) => {
-              if (scene.name === "safe closeup open") {
+              if (scene.name === "safe closeup open") {         //otevreni safu
                 scene.load(game);
                 return;
               }
