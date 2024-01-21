@@ -1320,7 +1320,7 @@
           "y": 225,
           "w": 400,
           "h": 150,
-          "type": "portal",
+          "type": "screwdriver",
           "direction": "",
           "sceneName": "toilet open"
         }
@@ -1366,11 +1366,11 @@
           "name": "key to salon",
           "description": "A key!",
           "imagePath": "./res/img/playable/key_for_salon.png",
-          "x": 425,
-          "y": 225,
+          "x": 465,
+          "y": 575,
           "w": 400,
           "h": 150,
-          "type": "portal",
+          "type": "vent-key",
           "direction": "",
           "sceneName": "toilet open"
         }

@@ -5,6 +5,13 @@ import Safe from "./safe.js";
 import Box from "./box.js";
 
 class Item {
+  static toiletsLocked = false;
+  static salonLocked = true;
+  static ventLocked = true;
+  static keyElement;
+  static ventKeyElement;
+  static screwdriverElement;
+
   constructor(name, description, imagePath, x, y, w, h, type, sceneName, data) {
     this.data = data;
     this.sceneName = sceneName;
@@ -37,9 +44,6 @@ class Item {
         this.element.onclick = () => {
           this.teleport();
         };
-        if (this.name === "toilet door") {
-          this.locked = true;
-        }
         break;
       case "safe-button":
         this.element.classList.add(`safe-button`);
@@ -74,7 +78,42 @@ class Item {
         this.element.onclick = () => {
           this.handleBoxClick();
         }
+        break;
+      case "box-key":
+        this.element.onclick = () => {
+          this.handleKey(this.element);
+        }
+        break;
+      case "vent-key":
+        this.element.onclick = () => {
+          this.handleVentKey(this.element);
+        }
+        break;
+      case "screwdriver":
+        this.element.onclick = () => {
+          this.handleScrewdriver(this.element);
+        }
+        break;
     }
+  }
+
+  handleKey(element) {
+    element.style.display = "none";
+    Item.toiletsLocked = false;
+    Item.keyElement = element;
+
+  }
+
+  handleVentKey(element) {
+    element.style.display = "none";
+    Item.salonLocked = false;
+    Item.ventKeyElement = element;
+  }
+
+  handleScrewdriver(element) {
+    element.style.display = "none";
+    Item.ventLocked = false;
+    Item.screwdriverElement = element;
   }
 
   handleDrink(element) {
@@ -92,6 +131,39 @@ class Item {
   teleport() {
     SceneManager.scenes.map((scene) => {
       switch (this.sceneName) {
+        case "vent closed":
+          if (!Item.salonLocked) {
+            SceneManager.scenes.map((scene) => {
+              if (scene.name === "vent open") {
+                scene.load(game);
+                Item.keyElement.style.display = "none";
+                return;
+              }
+            })
+          }
+          break;
+        case "box closeup":
+          if (!Item.toiletsLocked) {
+            SceneManager.scenes.map((scene) => {
+              if (scene.name === "box open closeup") {
+                scene.load(game);
+                Item.keyElement.style.display = "none";
+                return;
+              }
+            });
+          }
+          break;
+        case "toilet closed":
+          if (!Item.ventLocked) {
+            SceneManager.scenes.map((scene) => {
+              if (scene.name === "toilet open") {
+                scene.load(game);
+                Item.screwdriverElement.style.display = "none";
+                return;
+              }
+            });
+          }
+          break;
         case "codelock closeup":
           codelockInputText.style.display = "block";
           break;
@@ -126,7 +198,8 @@ class Item {
           }
           break;
         case "toilets":
-          if (!this.locked) {
+          //zamceni dveri
+          if (!Item.toiletsLocked) {
             SceneManager.scenes.map((scene) => {
               if (scene.name === "toilets") {
                 console.log("loading toilets")
@@ -136,6 +209,36 @@ class Item {
             });
           } else {
             console.log("toilets locked");
+            return;
+          }
+          break;
+        case "salon":
+          //zamceni dveri
+          if (!Item.salonLocked) {
+            SceneManager.scenes.map((scene) => {
+              if (scene.name === "salon") {
+                console.log("loading salon")
+                scene.load(game);
+                return;
+              }
+            });
+          } else {
+            console.log("salon locked");
+            return;
+          }
+          break;
+        case "vent closed":
+          //zamceni dveri
+          if (!Item.ventLocked) {
+            SceneManager.scenes.map((scene) => {
+              if (scene.name === "vent closed") {
+                console.log("loading vent")
+                scene.load(game);
+                return;
+              }
+            });
+          } else {
+            console.log("vent locked");
             return;
           }
           break;
@@ -190,8 +293,11 @@ class Item {
   }
 
   handleBoxClick() {
+    console.log("click")
     Box.input(this);
   }
+
+
 }
 
 export default Item;
