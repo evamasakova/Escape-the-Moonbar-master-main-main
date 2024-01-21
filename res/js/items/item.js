@@ -5,8 +5,8 @@ import Safe from "./safe.js";
 import Box from "./box.js";
 
 class Item {
-  static toiletsLocked = false;
-  static salonLocked = true;
+  static toiletsLocked = true;
+  static salonLocked = false;
   static ventLocked = true;
   static keyElement;
   static ventKeyElement;
@@ -132,11 +132,24 @@ class Item {
     SceneManager.scenes.map((scene) => {
       switch (this.sceneName) {
         case "vent closed":
-          if (!Item.salonLocked) {
+          if (!Item.ventLocked) {
             SceneManager.scenes.map((scene) => {
               if (scene.name === "vent open") {
                 scene.load(game);
-                Item.keyElement.style.display = "none";     //schovani klice
+                Item.ventKeyElement.style.display = "none";     //schovani klice
+                return;
+              }
+            })
+          }
+          break;
+
+
+        case "vent closed":
+          if (!Item.ventLocked) {
+            SceneManager.scenes.map((scene) => {
+              if (scene.name === "vent open") {
+                scene.load(game);
+                Item.ventKeyElement.style.display = "none";     //schovani klice
                 return;
               }
             })

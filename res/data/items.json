@@ -1376,5 +1376,115 @@
         }
       ]
     }
+  },
+  {
+    "scene": {
+      "name": "vent open",
+      "items": [
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "toilets"
+        },
+        {
+          "name": "abcd_codelock",
+          "description": "What's this?",
+          "imagePath": "./res/img/abcd_lock/Abcd.png",
+          "x": 465,
+          "y": 375,
+          "w": 200,
+          "h": 50,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "Abcd closeup"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "Abcd closeup",
+      "items": [
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "toilets"
+        },
+        {
+          "name": "abcd button",
+          "description": "",
+          "imagePath": "./res/img/abcd_lock/A.png",
+          "x": 465,
+          "y": 575,
+          "w": 400,
+          "h": 150,
+          "type": "final-door-button",
+          "direction": "",
+          "sceneName": "",
+          "data": {
+            "index": 0
+          }
+        },
+        {
+          "name": "abcd button",
+          "description": "",
+          "imagePath": "./res/img/abcd_lock/B.png",
+          "x": 465,
+          "y": 575,
+          "w": 400,
+          "h": 150,
+          "type": "final-door-button",
+          "direction": "",
+          "sceneName": "",
+          "data": {
+            "index": 1
+          }
+        },
+        {
+          "name": "abcd button",
+          "description": "",
+          "imagePath": "./res/img/abcd_lock/C.png",
+          "x": 465,
+          "y": 575,
+          "w": 400,
+          "h": 150,
+          "type": "final-door-button",
+          "direction": "",
+          "sceneName": "",
+          "data": {
+            "index": 2
+          }
+        },
+        {
+          "name": "abcd button",
+          "description": "",
+          "imagePath": "./res/img/abcd_lock/D.png",
+          "x": 465,
+          "y": 575,
+          "w": 400,
+          "h": 150,
+          "type": "final-door-button",
+          "direction": "",
+          "sceneName": "",
+          "data": {
+            "index": 3 
+          }
+        }
+      ]
+    }
   }
 ]

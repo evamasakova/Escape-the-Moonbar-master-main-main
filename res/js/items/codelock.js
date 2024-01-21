@@ -11,9 +11,13 @@ class Codelock {
       case "*":
         if (Codelock.checkSeqs()) {
           SceneManager.scenes.map((scene) => {
-            if (scene.name === "ending scene") {
+            if (scene.name === SceneManager.activeScene) {
+              scene.deloadItems();
+            }
+          });
+          SceneManager.scenes.map((scene) => {
+            if (scene.name === "final door") {
               scene.load(game);
-              return;
             }
           });
         } else {
