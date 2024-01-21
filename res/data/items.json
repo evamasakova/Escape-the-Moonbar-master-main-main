@@ -1019,6 +1019,37 @@
   },
   {
     "scene": {
+      "name": "box open closeup",
+      "items": [
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "storage"
+        },
+        {
+          "name": "box key",
+          "description": "A key!",
+          "imagePath": "./res/img/playable/Key_to_toilet.png",
+          "x": 588,
+          "y": 310,
+          "w": 250,
+          "h": 160,
+          "type": "box-key",
+          "direction": "",
+          "sceneName": ""
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
       "name": "salon",
       "items": [
         {
