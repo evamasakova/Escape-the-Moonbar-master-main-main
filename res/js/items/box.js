@@ -1,56 +1,56 @@
 import SceneManager from "../scenes/scenemanager.js";
 
-class Box {
+export default class Box {
   static correctSeq = ["splitTriangle", "snake", "threeLines", "whirl"];
-  static seq = [];
+  static changeSeq = [              //jak jdou po sobe symboly
+    {
+      "name": "whirl",
+      "imagePath": "./res/img/box/Whirl.png"
+    },
+    {
+      "name": "snake",
+      "imagePath": "./res/img/box/S_symbol.png"
+    },
+    {
+      "name": "splitTriangle",
+      "imagePath": "./res/img/box/Split_triangle.png"
+    },
+    {
+      "name": "threeLines",
+      "imagePath": "./res/img/box/Three_lines.png"
+    }
+  ];
+  static seq = ["", "", "", ""];      //currentSeq ulozena sem
   static canBeUsed = true;
   static opened = false;
 
-
-
-
-
-  static input(data) {
+  static input(item) {
     if (!this.canBeUsed || this.opened) return;
-    if (Box.seq.length < Box.correctSeq.length) {
-      Box.seq.push(data);
-      console.log(Box.seq);
+    item.currentImageIndex++;
+    if (item.currentImageIndex >= this.changeSeq.length) {
+      item.currentImageIndex = 0;
     }
-    if (Box.checkSeqs() && Box.correctSeq.length == Box.seq.length) {
-      console.log("Box opened");
-      this.opened = true;
-      SceneManager.scenes.map((scene) => {
-        if (scene.name === SceneManager.activeScene) {
-          scene.deloadItems();
-        }
-      });
-      SceneManager.scenes.map((scene) => {
-        if (scene.name === "box open closeup") {
-          scene.load(game);
-        }
-      });
-    } else if (Box.correctSeq.length == Box.seq.length) {
-      console.log("Wrong seq");
-      console.log("Your seq: " + Box.seq);
-      this.canBeUsed = false;
-
-      //prepinani 
-      
-     
-      setTimeout(() => {
-        this.canBeUsed = true;
-      }, 1000);
-      Box.seq = [];
-      console.log("New seq");
-      console.log(Box.seq);
+    item.element.src = Box.changeSeq[item.currentImageIndex].imagePath;       
+    item.element.title = Box.changeSeq[item.currentImageIndex].name;          //nazev symbolu
+    Box.seq[item.data.index] = Box.changeSeq[item.currentImageIndex].name;      //index toho symbolu ktery tam je
+    if (Box.checkSeqs()) {                    //zchekovani sekvence
+      Box.canBeSwapped = false;
+        SceneManager.scenes.map((scene) => {
+          if (scene.name === SceneManager.activeScene) {
+            scene.deloadItems();
+          }
+        });
+        SceneManager.scenes.map((scene) => {
+          if (scene.name === "box open closeup") {
+            scene.load(game);
+          }
+        });
     }
-
-    } 
-  static readData() {}
+  }
+  static readData() { }
 
   static checkSeqs() {
-    return JSON.stringify(Safe.correctSeq) == JSON.stringify(Safe.seq);
-  
-
+    return JSON.stringify(Box.correctSeq) == JSON.stringify(Box.seq);
+  }
 }
- }
+

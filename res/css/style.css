@@ -44,6 +44,9 @@ body {
     height: 100px;
     position: absolute;
     top: 0;
+    left: 0;
+    outline-color: rgb(20, 20, 20);
+    color: transparent rgb(20, 20, 20);
 }
 
 .safe-button-pink:hover {
@@ -77,7 +80,7 @@ body {
 }
 
 .safe-button-display {
-    transition: .1s ease; 
+    transition: .1s ease;
 }
 
 #codelock-input-text {

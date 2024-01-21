@@ -2,8 +2,7 @@ import SceneManager from "../scenes/scenemanager.js";
 import Bar from "./bar.js";
 import Codelock from "./codelock.js";
 import Safe from "./safe.js";
-
-
+import Box from "./box.js";
 
 class Item {
   constructor(name, description, imagePath, x, y, w, h, type, sceneName, data) {
@@ -38,6 +37,9 @@ class Item {
         this.element.onclick = () => {
           this.teleport();
         };
+        if (this.name === "toilet door") {
+          this.locked = true;
+        }
         break;
       case "safe-button":
         this.element.classList.add(`safe-button`);
@@ -67,6 +69,11 @@ class Item {
           window.location = "https://www.youtube.com/watch?v=BBJa32lCaaY";
         };
         break;
+      case "box-button":
+        this.currentImageIndex = 0;
+        this.element.onclick = () => {
+          this.handleBoxClick();
+        }
     }
   }
 
@@ -108,29 +115,30 @@ class Item {
             });
           }
           break;
-          case "backdoor":
-            if (!this.sceneName) {
-              SceneManager.scenes.map((scene) => {
-                if (scene.name === "hallway") {
-                  scene.load(game);
-                  return;
-                }
-              });
-            }
-            break;
-            /*newly added need to be checked for errors
-            case "salon_door":
-            if (!this.sceneName) {
-              SceneManager.scenes.map((scene) => {
-
-                if (scene.name === "salon_door" ) {
-                  scene.load(game);
-                  return;
-                }
-              });
-            }
-            break;
-          */
+        case "backdoor":
+          if (!this.sceneName) {
+            SceneManager.scenes.map((scene) => {
+              if (scene.name === "hallway") {
+                scene.load(game);
+                return;
+              }
+            });
+          }
+          break;
+        case "toilets":
+          if (!this.locked) {
+            SceneManager.scenes.map((scene) => {
+              if (scene.name === "toilets") {
+                console.log("loading toilets")
+                scene.load(game);
+                return;
+              }
+            });
+          } else {
+            console.log("toilets locked");
+            return;
+          }
+          break;
       }
       if (scene.name === this.sceneName) {
         scene.load(game);
@@ -179,6 +187,10 @@ class Item {
 
   handleCodelockButtonClick() {
     Codelock.input(this.data);
+  }
+
+  handleBoxClick() {
+    Box.input(this);
   }
 }
 

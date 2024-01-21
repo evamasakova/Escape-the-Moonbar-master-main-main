@@ -795,7 +795,7 @@
       "name": "hallway",
       "items": [
         {
-          "name": "chodbicka do storage",
+          "name": "storage door",
           "description": "Storage room",
           "imagePath": "./res/img/playable/storage_door.png",
           "x": 30,
@@ -819,7 +819,7 @@
           "sceneName": "bar front view"
         },
         {
-          "name": "chodbicka do salonu",
+          "name": "salon door",
           "description": "Salon",
           "imagePath": "./res/img/playable/salon_door.png",
           "x": 500,
@@ -831,7 +831,7 @@
           "sceneName": "salon"
         },
         {
-          "name": "chodbicka do toalet",
+          "name": "toilet door",
           "description": "Toilets",
           "imagePath": "./res/img/playable/toilet_door.png",
           "x": 905,
@@ -936,52 +936,64 @@
           "sceneName": "storage"
         },
         {
-          "name": "whirl",
-          "description": "Whirl symbol",
+          "name": "Box button",
+          "description": "Button",
           "imagePath": "./res/img/box/Whirl.png",
           "x": 390,
           "y": 340,
           "w": 100,
           "h": 170,
-          "type": "portal",
+          "type": "box-button",
           "direction": "",
-          "sceneName": "whirl"
+          "sceneName": "",
+          "data": {
+            "index": 0
+          }
         },
         {
-          "name": "whirl",
-          "description": "Whirl symbol",
+          "name": "Box button",
+          "description": "Button",
           "imagePath": "./res/img/box/Whirl.png",
           "x": 522,
           "y": 340,
           "w": 100,
           "h": 170,
-          "type": "portal",
+          "type": "box-button",
           "direction": "",
-          "sceneName": "whirl"
+          "sceneName": "",
+          "data": {
+            "index": 1
+          }
         },
         {
-          "name": "whirl",
-          "description": "Whirl symbol",
+          "name": "Box button",
+          "description": "Button",
           "imagePath": "./res/img/box/Whirl.png",
           "x": 665,
           "y": 340,
           "w": 100,
           "h": 170,
-          "type": "portal",
+          "type": "box-button",
           "direction": "",
-          "sceneName": "whirl"
+          "sceneName": "",
+          "data": {
+            "index": 2
+          }
         },
         {
-          "name": "whirl",
-          "description": "Whirl symbol",
-          "imagePath": "./res/img/box/Whirl.png",
+          "name": "Box button",
+          "description": "snake",
+          "imagePath": "./res/img/box/S_symbol.png",
           "x": 802,
           "y": 340,
           "w": 100,
           "h": 170,
-          "type": "portal",
+          "type": "box-button",
           "direction": "",
-          "sceneName": "whirl"
+          "sceneName": "",
+          "data": {
+            "index": 3
+          }
         }
       ]
     }
