@@ -3,6 +3,8 @@ import Bar from "./bar.js";
 import Codelock from "./codelock.js";
 import Safe from "./safe.js";
 
+
+
 class Item {
   constructor(name, description, imagePath, x, y, w, h, type, sceneName, data) {
     this.data = data;
@@ -116,7 +118,19 @@ class Item {
               });
             }
             break;
-          
+            /*newly added need to be checked for errors
+            case "salon_door":
+            if (!this.sceneName) {
+              SceneManager.scenes.map((scene) => {
+
+                if (scene.name === "salon_door" ) {
+                  scene.load(game);
+                  return;
+                }
+              });
+            }
+            break;
+          */
       }
       if (scene.name === this.sceneName) {
         scene.load(game);

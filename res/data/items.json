@@ -777,7 +777,7 @@
       "items": [
         {
           "name": "Kredenšls",
-          "description": "who made this bitch",
+          "description": "who made this",
           "imagePath": "./res/img/moon-icon.png",
           "x": 715,
           "y": 30,
@@ -820,7 +820,7 @@
         },
         {
           "name": "chodbicka do salonu",
-          "description": "prepnuti do salonu",
+          "description": "Salon",
           "imagePath": "./res/img/playable/salon_door.png",
           "x": 500,
           "y": 145,
@@ -832,7 +832,7 @@
         },
         {
           "name": "chodbicka do toalet",
-          "description": "prepnuti do toalet",
+          "description": "Toilets",
           "imagePath": "./res/img/playable/toilet_door.png",
           "x": 905,
           "y": 160,
@@ -851,7 +851,7 @@
       "items": [
         {
           "name": "brandy",
-          "description": "Brandy tucked on a shelf",
+          "description": "Brandy tucked in a shelf",
           "imagePath": "./res/img/playable/brandy.png",
           "x": 420,
           "y": 200,
@@ -863,7 +863,7 @@
         },
         {
           "name": "box",
-          "description": "Box tucked on a shelf",
+          "description": "Box tucked in a shelf",
           "imagePath": "./res/img/box/box_in_storage.png",
           "x": 510,
           "y": 470,
@@ -1011,7 +1011,7 @@
       "items": [
         {
           "name": "martini",
-          "description": "Martini sitting on a table",
+          "description": "Martini sitting on a table, with three olives in it.",
           "imagePath": "./res/img/playable/martini.png",
           "x": 605,
           "y": 374,
@@ -1190,7 +1190,7 @@
         },
         {
           "name": "coin side two",
-          "description": "go back",
+          "description": "What could this mean",
           "imagePath": "./res/img/scene/coin_side_two.png",
           "x": 0,
           "y": 0,
@@ -1240,7 +1240,7 @@
         },
         {
           "name": "toilet top",
-          "description": "go back",
+          "description": "It's loose, maybe i could open it.",
           "imagePath": "./res/img/playable/toilet_top.png",
           "x": 265,
           "y": 110,
@@ -1271,12 +1271,12 @@
         },
         {
           "name": "screwdriver",
-          "description": "go back",
+          "description": "A screwdriver",
           "imagePath": "./res/img/playable/screwdriver.png",
-          "x": 265,
-          "y": 110,
-          "w": 760,
-          "h": 270,
+          "x": 425,
+          "y": 225,
+          "w": 400,
+          "h": 150,
           "type": "portal",
           "direction": "",
           "sceneName": "toilet open"
@@ -1299,6 +1299,37 @@
           "type": "portal",
           "direction": "left",
           "sceneName": "toilets"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "name": "vent open",
+      "items": [
+        {
+          "name": "left facing",
+          "description": "go back",
+          "imagePath": "",
+          "x": 10,
+          "y": 50,
+          "w": 100,
+          "h": 100,
+          "type": "portal",
+          "direction": "left",
+          "sceneName": "toilets"
+        },
+        {
+          "name": "key to salon",
+          "description": "A key!",
+          "imagePath": "./res/img/playable/key_for_salon.png",
+          "x": 425,
+          "y": 225,
+          "w": 400,
+          "h": 150,
+          "type": "portal",
+          "direction": "",
+          "sceneName": "toilet open"
         }
       ]
     }
