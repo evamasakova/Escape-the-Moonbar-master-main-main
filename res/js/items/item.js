@@ -3,6 +3,7 @@ import Bar from "./bar.js";
 import Codelock from "./codelock.js";
 import Safe from "./safe.js";
 import Box from "./box.js";
+import Abcd from "./abcd.js";
 
 class Item {
   static toiletsLocked = true;
@@ -77,6 +78,12 @@ class Item {
         this.currentImageIndex = 0;
         this.element.onclick = () => {
           this.handleBoxClick();
+        }
+        break;
+        case "final-door-button":
+        this.currentImageIndex = 0;
+        this.element.onclick = () => {
+          this.handleFinalDoorClick();
         }
         break;
       case "box-key":
@@ -308,6 +315,10 @@ class Item {
   handleBoxClick() {
     console.log("click")
     Box.input(this);
+  }
+  handleFinalDoorClick() {
+    console.log("click")
+    Abcd.input(this);
   }
 
 

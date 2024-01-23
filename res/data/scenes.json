@@ -42,11 +42,11 @@
         },
         {
             "name": "wallpic closeup",
-            "path": "./res/img/scene/painting-closed.png"  
-        }, 
+            "path": "./res/img/scene/painting-closed.png"
+        },
         {
             "name": "wallpic open closeup",
-            "path": "./res/img/scene/painting-open.png"  
+            "path": "./res/img/scene/painting-open.png"
         },
         {
             "name": "main door code input closeup",
@@ -98,43 +98,47 @@
         },
         {
             "name": "box closeup",
-            "path": "./res/img/scene/box_closeup_storage.png" 
+            "path": "./res/img/scene/box_closeup_storage.png"
         },
         {
             "name": "box open closeup",
-            "path": "./res/img/scene/box_closeup_open.png" 
+            "path": "./res/img/scene/box_closeup_open.png"
         },
         {
             "name": "storage painting closeup",
-            "path": "./res/img/scene/painting_in_storage_closeup.png" 
+            "path": "./res/img/scene/painting_in_storage_closeup.png"
         },
         {
             "name": "lamp off closeup",
-            "path": "./res/img/scene/lamp_off_closeup.png" 
+            "path": "./res/img/scene/lamp_off_closeup.png"
         },
         {
             "name": "lamp on closeup",
-            "path": "./res/img/scene/lamp_on_closeup.png" 
+            "path": "./res/img/scene/lamp_on_closeup.png"
         },
         {
             "name": "final door",
-            "path": "./res/img/scene/final_door.png" 
+            "path": "./res/img/scene/final_door.png"
+        },
+        {
+            "name": "Abcd closeup",
+            "path": "./res/img/abcd_lock/abcd_closeup.png"
         },
         {
             "name": "toilet closed",
-            "path": "./res/img/scene/toilet_closed.png" 
+            "path": "./res/img/scene/toilet_closed.png"
         },
         {
             "name": "toilet open",
-            "path": "./res/img/scene/toilet_open.png" 
+            "path": "./res/img/scene/toilet_open.png"
         },
         {
             "name": "vent closed",
-            "path": "./res/img/scene/vent_closed_closeup.png" 
+            "path": "./res/img/scene/vent_closed_closeup.png"
         },
         {
             "name": "vent open",
-            "path": "./res/img/scene/vent_open_closeup.png" 
+            "path": "./res/img/scene/vent_open_closeup.png"
         }
     ]
 }
