@@ -1,12 +1,56 @@
 {
   "objective": [
     {
-      "name": "Lorem ipsum",
-      "description": ""
+      "name": "play-button",
+      "description": "Oh no! Did I oversleep? I cannot miss this interview."
     },
     {
-      "name": "Lorem ipsum",
-      "description": ""
+      "name": "coin_on_ground",
+      "description": "Kinda nasty. But I'll take it."
+    },
+    {
+      "name": "key_for_salon",
+      "description": "A key! This could be for the locked door. I really need to get to that interview."
+    },
+    {
+      "name": "key_to_toilet",
+      "description": "Wonder what this could unlock."
+    },
+    {
+      "name": "lamp_salon",
+      "description": "What a pretty lamp."
+    },
+    {
+      "name": "lamp_shade",
+      "description": "Let there be light."
+    },
+    {
+      "name": "martini",
+      "description": "No time to drink now! I have an interview to catch. I should hurry."
+    },
+    {
+      "name": "Painting_in_ storage",
+      "description": "No time for admiring pretty paintings! I have to get out of here."
+    },
+    {
+      "name": "plant_bar_front_view",
+      "description": "Something is in the pot!"
+    },
+    {
+      "name": "Screwdriver",
+      "description": "A screwdriver? Here? Strange."
+    },
+    {
+      "name": "toilet_stall_door",
+      "description": "Don't need the toilet right now."
+    },
+    {
+      "name": "toilet_top",
+      "description": "It's totally loose."
+    },
+    {
+      "name": "vent_in_toilet",
+      "description": "A vent. Too small for me to crawl through."
     }
   ]
 }
