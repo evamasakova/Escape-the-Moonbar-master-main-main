@@ -7,7 +7,7 @@ import Abcd from "./abcd.js";
 
 class Item {
   static toiletsLocked = true;
-  static salonLocked = false;
+  static salonLocked = true;
   static ventLocked = true;
   static keyElement;
   static ventKeyElement;
