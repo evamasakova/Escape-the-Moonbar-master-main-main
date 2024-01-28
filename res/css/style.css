@@ -18,12 +18,12 @@ body {
     overflow: hidden;
 }
 
-.story{
-    text-align: center;
+
+
+.story {
+    align-self: center;
     color: aliceblue;
-    position: absolute;
-    top: 20;
-    left: 20;
+    text-align: center;
 }
 
 .game-wrapper {
