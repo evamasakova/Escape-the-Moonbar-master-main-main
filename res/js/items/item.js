@@ -6,6 +6,10 @@ import Box from "./box.js";
 import Abcd from "./abcd.js";
 
 class Item {
+  static itemStoryInfo;
+  static storyElement;
+  static storyTimer;
+  static storyAnimationTimer;
   static toiletsLocked = true;
   static salonLocked = true;
   static ventLocked = true;
@@ -40,10 +44,17 @@ class Item {
 
   handleType() {
     switch (this.type) {
-      case "play-button":
+      case "play-button": 
+        this.element.onclick = () => {
+          Abcd.startTime = performance.now();
+          this.teleport();
+          this.handleStory();
+        };
+        break;
       case "portal":
         this.element.onclick = () => {
           this.teleport();
+          this.handleStory();
         };
         break;
       case "safe-button":
@@ -89,18 +100,40 @@ class Item {
       case "box-key":
         this.element.onclick = () => {
           this.handleKey(this.element);
+          this.handleStory();
         }
         break;
       case "vent-key":
         this.element.onclick = () => {
           this.handleVentKey(this.element);
+          this.handleStory();
         }
         break;
       case "screwdriver":
         this.element.onclick = () => {
           this.handleScrewdriver(this.element);
+          this.handleStory();
         }
         break;
+    }
+  }
+
+  handleStory() {
+    for (const iterator of Item.itemStoryInfo) {
+      if (iterator.name === this.name) {
+        Item.storyElement.style.display = "block";
+        Item.storyElement.style.opacity = 1;
+        Item.storyElement.innerHTML = iterator.description;
+        clearTimeout(Item.storyTimer);
+        Item.storyTimer = setTimeout(() => {
+          clearTimeout(Item.storyAnimationTimer);
+          Item.storyElement.style.opacity = 0;
+          Item.storyAnimationTimer = setTimeout(() => {
+          Item.storyElement.style.display = "none";
+          }, 250);
+        }, 8000);
+        break;
+      }
     }
   }
 

@@ -1,6 +1,10 @@
 import SceneManager from "../scenes/scenemanager.js";
+import endingScene from "../scenes/ending.js";
 
 export default class Abcd {
+  static endingDivElement;
+  static endingPElement;
+  static startTime;
   static correctSeq = ["B", "C", "A", "D"];
   static changeSeq = [              //jak jdou po sobe symboly
     {
@@ -42,6 +46,7 @@ export default class Abcd {
         });
         SceneManager.scenes.map((scene) => {
           if (scene.name === "ending scene") {
+            endingScene(Abcd.endingDivElement, Abcd.endingPElement, Abcd.startTime);
             scene.load(game);
           }
         });

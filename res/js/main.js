@@ -1,6 +1,11 @@
 import SceneManager from "./scenes/scenemanager.js";
 import Portal from "./scenes/portal.js";
 import Item from "./items/item.js";
+import Abcd from "./items/abcd.js";
+
+const story = document.getElementById("story");
+const endingScene = document.getElementById("ending-scene");
+const endingContent = document.getElementById("ending-content");
 
 /* DOM */
 const sceneManager = new SceneManager();
@@ -13,8 +18,18 @@ const loadScenes = async () => {
   await sceneManager.loadScenes();
   sceneManager.loadActiveScene();
   await loadItemsToScenes();
+  await loadStory();
+  Item.storyElement = story;
+  Abcd.endingDivElement = endingScene;
+  Abcd.endingPElement = endingContent;
   SceneManager.scenes[0].load(game);
 };
+
+const loadStory = async () => {
+  const storyFile = await fetch("./res/data/story.json");
+  const storyData = await storyFile.json();
+  Item.itemStoryInfo = storyData;
+}
 
 const loadItemsToScenes = async () => {
   const items = await fetch("./res/data/items.json");
