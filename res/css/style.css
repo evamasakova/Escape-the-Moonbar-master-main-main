@@ -118,7 +118,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     transition: 1s ease;
@@ -131,4 +130,5 @@ body {
     font-size: 42px;
     transition: 1s ease;
     opacity: 0;
+    max-width: 720px;
 }

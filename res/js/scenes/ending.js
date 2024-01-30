@@ -1,7 +1,7 @@
 
 
-export default function endingScene(divElement, pElement, startTime) {
-    const finalTime = 1000;
+export default async function endingScene(divElement, pElement, startTime) {
+    const finalTime = (performance.now() - startTime) / 1000;
     const data = [
         "Wow! Such speed! Nyoom Nyoooom. You are faster than Sonic himself. Good job and good luck on your interview.",
         "You've done it! You have reached the exit of the Moonbar. Sadly you did not get to the interview in time. What a shame! There's always next time. :D",
@@ -10,44 +10,38 @@ export default function endingScene(divElement, pElement, startTime) {
         "Mental breakdowns: 74",
         "Script: Eva Masáková",
         "Experience++",
-        "Best supervisor of all time: Profesor Jan Till"
+        "Best supervisor of all time: Profesor Jan Till",
+        `Your time: ${Math.floor(finalTime)}s`
     ]
-    divElement.style.display = "block";
-    pElement.style.opacity = 1;
+    divElement.style.display = "flex";
+    pElement.style.opacity = 0;
     if (finalTime > 5 * 60) {
-        pElement.innerHTML = data[0];
-    } else {
         pElement.innerHTML = data[1];
+    } else {
+        pElement.innerHTML = data[0];
     }
-    setTimeout(() => {
-        setTimeout(() => {
+    await new Promise(resolve => setTimeout(resolve, 1000)).then(() => {
+        pElement.style.opacity = 1;
+    })
+    await new Promise(resolve => setTimeout(resolve, 10000)).then(() => {
+        pElement.style.opacity = 0;
+    })
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    for (let i = 2; i < data.length;) {
+        pElement.innerHTML = data[i];
+        pElement.style.opacity = 1;
+        await new Promise(resolve => setTimeout(resolve, 5000)).then(() => {
             pElement.style.opacity = 0;
-        }, 10000);
-    }, 0)
-    setTimeout(() => {
-        for (let i = 2; i <= data.length;) {
-            pElement.innerHTML = data[i];
-            pElement.style.opacity = 1;
-            setTimeout(() => {
-                pElement.style.opacity = 0;
-            }, 5000);
-            setTimeout(() => {
-                i++;
-            }, 6000);
-        }
-    }, 0);
-    pElement.style.opacity = 1;
-    pElement.style.innerHTML = `Time to finish: ${finalTime}s`;
-    setTimeout(() => {
-        setTimeout(() => {
-            pElement.style.opacity = 0;
-        }, 5000);
-    }, 0)
-    setTimeout(() => {
+        })
+        await new Promise(resolve => setTimeout(resolve, 1000)).then(() => {
+            i++;
+        })
+    }
+    await new Promise(resolve => setTimeout(resolve, 2000)).then(() => {
         divElement.style.opacity = 0;
-    }, 2000);
-    setTimeout(() => {
+    })
+    await new Promise(resolve => setTimeout(resolve, 3000)).then(() => {
         divElement.style.display = "none";
-    }, 3000);
+    })
 
 }
