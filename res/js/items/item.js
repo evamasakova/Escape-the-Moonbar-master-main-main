@@ -4,6 +4,8 @@ import Codelock from "./codelock.js";
 import Safe from "./safe.js";
 import Box from "./box.js";
 import Abcd from "./abcd.js";
+const audio = new Audio("./res/song/song.mp3");
+audio.loop = true;
 
 class Item {
   static itemStoryInfo;
@@ -49,6 +51,7 @@ class Item {
           Abcd.startTime = performance.now();
           this.teleport();
           this.handleStory();
+          audio.play();
         };
         break;
       case "portal":
