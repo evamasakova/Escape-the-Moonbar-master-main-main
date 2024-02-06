@@ -5,11 +5,19 @@
   },
   {
     "name": "wall pic",
-    "description": "Ugh I wish I could skip this interview to play minecraft. But it's either I find a job or starve to death."
+    "description": "Ugh I wish I could skip this interview to play minecraft. But either I find a job or starve to death."
   },
   {
     "name": "Safe",
     "description": "How dumb are you to have a safe in the middle of a bar? That's not very safe."
+  },
+  {
+    "name": "toilet door",
+    "description": "Who would lock a bathroom?"
+  },
+  {
+    "name": "salon door",
+    "description": "Locking all the good stuff? Gotta be some paranoid owners."
   },
   {
     "name": "coin",
