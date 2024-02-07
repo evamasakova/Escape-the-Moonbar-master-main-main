@@ -1391,7 +1391,7 @@
           "h": 100,
           "type": "portal",
           "direction": "left",
-          "sceneName": "toilets"
+          "sceneName": "bar front view"
         },
         {
           "name": "abcd_codelock",
@@ -1422,7 +1422,7 @@
           "h": 100,
           "type": "portal",
           "direction": "left",
-          "sceneName": "bar front view"
+          "sceneName": "final door"
         },
         {
           "name": "abcd button",
