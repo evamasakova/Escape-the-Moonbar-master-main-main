@@ -1422,7 +1422,7 @@
           "h": 100,
           "type": "portal",
           "direction": "left",
-          "sceneName": "final door"
+          "sceneName": "bar front view"
         },
         {
           "name": "abcd button",

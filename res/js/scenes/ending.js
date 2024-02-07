@@ -14,7 +14,7 @@ export default async function endingScene(divElement, pElement, startTime) {
         "Song title: Van Tassell",
         "artist name: Vic Dillahay",
         "source: Free Music Archive ",
-        "license type: CC BY"
+        "license type: CC BY",
         `Your time: ${Math.floor(finalTime)}s`
     ]
     divElement.style.display = "flex";
