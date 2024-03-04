@@ -1,7 +1,7 @@
 import SceneManager from "../scenes/scenemanager.js";
 
 export default class Box {
-  static correctSeq = ["splitTriangle", "snake", "threeLines", "whirl"];
+  static correctSeq = ["splitTriangle", "whirl", "threeLines", "snake"];
   static changeSeq = [              //jak jdou po sobe symboly
     {
       "name": "whirl",
